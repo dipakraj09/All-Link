@@ -64,7 +64,7 @@
     "shortLink": "bit.ly/4r3wO6M",
     "destination": "https://easyy-one.vercel.app/"
   },
-  {
+    {
     "title": "Naam Jaap Game",
     "shortLink": "bit.ly/nam-jap",
     "destination": "https://nam-jap-chi.vercel.app/"
@@ -73,5 +73,10 @@
     "title": "Naam Jaap Game",
     "shortLink": "bit.ly/4rtSFcc",
     "destination": "https://nam-jap-chi.vercel.app/"
+  },
+  {
+    "title": "Bookmark Website ❤️",
+    "shortLink": "start.me",
+    "destination": "https://start.me/"
   }
 ]
