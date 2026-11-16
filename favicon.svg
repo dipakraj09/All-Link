@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc">
+  <title id="title">All Link — Link Manager</title>
+  <desc id="desc">Circular blue app logo with a clipboard, check marks, and chain link symbol.</desc>
+  <defs>
+    <linearGradient id="outer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".48" stop-color="#2563eb"/><stop offset="1" stop-color="#082f9e"/>
+    </linearGradient>
+    <linearGradient id="inside" x1=".1" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#123fbb"/><stop offset=".55" stop-color="#082b83"/><stop offset="1" stop-color="#06194d"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/><stop offset=".5" stop-color="#168bff"/><stop offset="1" stop-color="#0752c9"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff176"/><stop offset=".5" stop-color="#facc15"/><stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+      <feOffset dy="7" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".42"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><circle cx="256" cy="256" r="218"/></clipPath>
+  </defs>
+
+  <!-- circular badge -->
+  <circle cx="256" cy="256" r="254" fill="url(#outer)"/>
+  <circle cx="256" cy="256" r="237" fill="#f8fafc"/>
+  <circle cx="256" cy="256" r="225" fill="url(#inside)"/>
+  <circle cx="256" cy="256" r="214" fill="none" stroke="#67e8f9" stroke-width="3" opacity=".65"/>
+
+  <g clip-path="url(#clip)">
+    <path d="M30 180 Q250 -10 482 140 L482 20 L30 20Z" fill="#fff" opacity=".055"/>
+    <!-- subtle chain-link watermark -->
+    <g fill="none" stroke="#60c9ff" stroke-width="10" opacity=".24">
+      <path d="M75 255l25-25a22 22 0 0 1 31 0M90 278l-8 8a22 22 0 0 1-31-31l18-18"/>
+      <path d="M390 235l25-25a22 22 0 0 1 31 0M405 258l-8 8a22 22 0 0 1-31-31l18-18"/>
+    </g>
+
+    <!-- clipboard -->
+    <g filter="url(#shadow)">
+      <rect x="139" y="111" width="234" height="238" rx="27" fill="url(#paper)" stroke="#071b55" stroke-width="9"/>
+      <path d="M205 111v-12q0-25 25-25h52q25 0 25 25v12" fill="none" stroke="#071b55" stroke-width="13" stroke-linecap="round"/>
+      <rect x="205" y="68" width="108" height="54" rx="19" fill="url(#blue)" stroke="#071b55" stroke-width="8"/>
+      <circle cx="259" cy="94" r="9" fill="#06194d"/>
+      <g fill="#0b56b7" opacity=".48">
+        <rect x="220" y="166" width="112" height="13" rx="6.5"/>
+        <rect x="220" y="217" width="95" height="13" rx="6.5"/>
+        <rect x="220" y="268" width="82" height="13" rx="6.5"/>
+      </g>
+      <g fill="#16b85b" stroke="#eafff3" stroke-width="4">
+        <circle cx="181" cy="172" r="19"/><circle cx="181" cy="223" r="19"/><circle cx="181" cy="274" r="19"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M171 172l7 7 14-16"/><path d="M171 223l7 7 14-16"/><path d="M171 274l7 7 14-16"/>
+      </g>
+    </g>
+
+    <!-- chain link foreground -->
+    <g transform="rotate(-28 318 231)" filter="url(#shadow)" fill="none" stroke-linecap="round">
+      <path d="M264 221l-25 25a34 34 0 0 0 48 48l34-34" stroke="#06194d" stroke-width="47"/>
+      <path d="M264 221l-25 25a34 34 0 0 0 48 48l34-34" stroke="url(#blue)" stroke-width="34"/>
+      <path d="M264 221l-25 25a34 34 0 0 0 48 48l34-34" stroke="#dffaff" stroke-width="9" opacity=".9"/>
+      <path d="M316 241l25-25a34 34 0 0 0-48-48l-34 34" stroke="#06194d" stroke-width="47"/>
+      <path d="M316 241l25-25a34 34 0 0 0-48-48l-34 34" stroke="url(#blue)" stroke-width="34"/>
+      <path d="M316 241l25-25a34 34 0 0 0-48-48l-34 34" stroke="#fff" stroke-width="9" opacity=".95"/>
+    </g>
+
+    <!-- gold orbit accent -->
+    <path d="M100 320 Q256 385 414 300" fill="none" stroke="#facc15" stroke-width="10" stroke-linecap="round" opacity=".95"/>
+    <path d="M105 330 Q256 390 408 311" fill="none" stroke="#fff3a3" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+
+    <!-- brand name -->
+    <text x="256" y="414" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900" letter-spacing="-3" fill="#06194d" stroke="#06194d" stroke-width="13" stroke-linejoin="round">All Link</text>
+    <text x="256" y="407" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900" letter-spacing="-3">
+      <tspan fill="#ffffff">All </tspan><tspan fill="#facc15">Link</tspan>
+    </text>
+    <rect x="95" y="432" width="322" height="43" rx="21.5" fill="url(#gold)" stroke="#fff2a8" stroke-width="2"/>
+    <text x="256" y="461" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#09245f">SAVE  •  MANAGE  •  OPEN</text>
+  </g>
+</svg>
